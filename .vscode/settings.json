@@ -1,0 +1,25 @@
+{
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": false,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Enabled": true,
+    // use black max line length(88) instead of flake8
+    "python.linting.flake8Args": [
+        "--ignore=E501",
+    ],
+    "python.linting.enabled": true,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 4
+    },
+    // isort
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.sortImports.args": [
+        "--settings-path",
+        "${workspaceFolder}/.vscode/.isort.cfg",
+    ],
+}

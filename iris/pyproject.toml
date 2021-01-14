@@ -1,0 +1,29 @@
+[tool.kedro]
+package_name = "iris"
+project_name = "Iris"
+project_version = "0.17.0"
+
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/iris -ra"""
+
+[tool.poetry]
+name = "iris"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+kedro = "^0.17.0"
+mlflow = "^1.13.1"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+isort = "^5.7.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
