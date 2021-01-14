@@ -1,6 +1,6 @@
 # Iris
 
-![kedro-viz](./kedro-pipeline.png)
+<img src="./kedro-pipeline.png" width="300">
 
 ## Overview
 
