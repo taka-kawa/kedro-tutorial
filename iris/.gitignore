@@ -3,7 +3,6 @@
 
 # added files
 mlruns
-.coveragerc
 
 # ignore all local configuration
 conf/local/**
